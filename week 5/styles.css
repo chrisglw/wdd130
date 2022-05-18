@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#title-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 450px;
+    flex-basis: 450px;
+    border-bottom: 1px solid #000;
+}
+
+#title-card h1 {
+    padding: 0 60px;
+}
+
+#title-card h2 {
+    padding: 0 60px 60px;
+}
+
+.card-holder {
+
+}
+
+.card-holder img {
+    max-width: 100px;
+    height: auto;
+}
