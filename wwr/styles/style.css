@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+:root {
+--heading-font: "Rock Salt";
+--paragraph-font: Roboto, Helvetica, sans-serif;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +14,7 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     color: black;
@@ -28,13 +36,23 @@ nav a:hover {
 
 body {
     background-color: #fcfbfb; 
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
+
 header {
     background-color: #003049;
 }
 
 .home-title{
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
 
+h2 {
+    margin: 0;
 }
 
 h4 {
@@ -43,27 +61,31 @@ h4 {
 
 .book {
     text-align: center; 
-    color: blue;
+    color: black;
+    background-color: #fcbf49;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .join {
     text-align: center; 
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover {
-    background-color: #003049;
-    color: #fcbf49;
+    background-color: #f77f00;
+    color: black;
 }
 
 .join:hover {
-    color: #fcbf49;
-}
-
-.msg h2 {
-    text-align: center; 
     color: #fcbf49;
 }
 
@@ -71,6 +93,21 @@ h4 {
     text-align: center;
     background-color: #003049;
     color: white;
+    /* line-height: 1.5em; */
+    padding: 35px;
+}
+
+.msg h2 {
+    text-align: center; 
+    color: #fcbf49;
+    font-family: var(--heading-font);
+    
+}
+
+.msg p {
+    font-size: .8em;
+    /* font-family: var(--paragraph-font); */
+    padding-bottom: 15px;
 }
 
 footer h3 {
@@ -83,7 +120,10 @@ footer h3 a:hover {
 
 footer {
     background-color: #003049;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
+
 footer p {
     text-size-adjust: 1.2em;
     text-decoration: underline;
@@ -99,6 +139,10 @@ footer p a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .logo {
     width: 80px;
 }
@@ -108,9 +152,27 @@ footer p a:hover {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%;
 }
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-cards, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #003049;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
 
