@@ -32,6 +32,11 @@ nav a:hover {
 #background {
     background-color: antiquewhite;
     height: 725px;
+    margin-bottom: 100px;
+}
+
+.mountains {
+    margin-bottom: 200px;
 }
 
 body {
@@ -93,7 +98,7 @@ h4 {
     text-align: center;
     background-color: #003049;
     color: white;
-    /* line-height: 1.5em; */
+    line-height: 1.5em;
     padding: 35px;
 }
 
