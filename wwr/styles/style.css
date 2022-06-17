@@ -212,7 +212,7 @@ footer .social img {
     align-self: center;
 }
 
-.rivers-cards {
+.rivers-card {
     margin: 200px 0;
     grid-column: 2/4;
     grid-row: 2/3;
