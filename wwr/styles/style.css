@@ -23,7 +23,7 @@ nav a {
 }
 nav a:hover {
     color: black;
-    background-color: #f77f00;
+    background-color: white;
 }
 
 #hero-msg {
@@ -42,7 +42,7 @@ nav a:hover {
 }
 
 #background {
-    background-color: antiquewhite;
+    background-color: rgb(209, 208, 208);
     height: 725px;
     margin-bottom: 100px;
     grid-column: 1/11;
@@ -80,9 +80,9 @@ h2 {
     margin: 0;
 }
 
-h4 {
+/* h4 {
 
-}
+} */
 
 .book {
     text-align: center; 
