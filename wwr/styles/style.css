@@ -326,5 +326,9 @@ hr {
     footer {
         margin-top: 25px;
     }
+    .img-rivers {
+        width: 368px;
+        height: 212px;
+    }
 }
 
