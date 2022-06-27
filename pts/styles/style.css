@@ -67,9 +67,40 @@ header {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     margin-top: 50px;
     grid-row-gap: 25px;
+}
+
+.button-box{
+    text-align: center; 
+
+}
+
+.book {
+
+}
+
+.ps-grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr;
+    margin-top: 50px;
+    grid-row-gap: 25px;
+}
+
+.book-card {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    height: 100%;
+    width: 100%;
+}
+
+.best {
+    align-self: center;
+    grid-column: 2/10;
+    grid-row: 2/3;
 }
 
 .online-card {
@@ -90,6 +121,13 @@ header {
     vertical-align: middle;
 }
 
+.book-p {
+    grid-column: 5/10;
+    grid-row: 1/2;
+    background-color: #d3d0d0;
+    ;
+}
+
 .p-right {
     grid-column: 5/10;
     grid-row: 1/2;
@@ -107,10 +145,10 @@ header {
     /* width: 100%; */
     grid-column: 2/10;
     grid-row: 3/4; 
+    background-color: #d3d0d0;
     /* margin-top: 25px; */
     /* box-shadow: 5px 5px 10px #6f7364; */
 }
-
 
 
 .msg h2 {
