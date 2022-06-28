@@ -8,8 +8,8 @@ Fonts are separated by a | */
   /* change the values below to your colors from your palette */
   --primary-color: black   ;
   --secondary-color: White ;
-  --accent1-color: #808080;
-  --accent2-color: #264c71;
+  --accent1-color: #d3d0d0;
+  --accent2-color: #f40b0b;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Roboto";
