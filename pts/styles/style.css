@@ -306,6 +306,30 @@ form {
     margin-top: 3em;
 }
 
+#photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 100px 0;
+}
+
+/* .photo-l { */
+    /* grid-row: 2/4;
+    grid-column: 2/5; */
+    /* align-items: center;
+    justify-self: center; */
+    /* margin: 0 auto; */
+
+/* .photo-r { */
+    /* grid-row: 2/4;
+    grid-column: 7/10; */
+    /* align-items: center;
+    justify-self: center; */
+    /* margin: 0 auto; */
+
+
 
 /* assignment test */
 
