@@ -138,6 +138,17 @@ header img {
 }
 
 /* =========================================
+   MAIN
+========================================= */
+h1 {
+    text-align: center;
+}
+
+/* ============================================================================================
+        ABOUT US PAGE
+============================================================================================== */
+
+/* =========================================
    HISTORY SECTION
 ========================================= */
 
@@ -197,6 +208,113 @@ header img {
     margin-top: 0.5rem;
     font-size: 0.95rem;
     color: var(--accent1-color);
+}
+
+/* ============================================================================================
+        CONTACT US PAGE
+============================================================================================== */
+.company-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.company-info p {
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================
+    CONTACT CONTAINER
+========================================= */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* map */
+.map-div iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+}
+
+/* form */
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form-item-stacked {
+    display: grid;
+    gap: 0.5rem;
+}
+
+textarea {
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: .5rem;
+    font: inherit;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+button {
+    width: 220px;
+    justify-self: center;
+    padding: 0.75rem;
+}
+
+/* =========================================
+    EMPLOYEE CONTAINER
+========================================= */
+.employee-container {
+    border: 1px solid black;
+    background-color: rgb(247, 246, 246);
+    padding: 1rem;
+}
+
+.employee-container h2 {
+    text-align: center;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.employees figure {
+    text-align: center;
+    margin: 0;
+}
+
+.employees img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 /* =========================================

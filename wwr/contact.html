@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Get in touch with our team. Fill out our contact form for inquiries, support, or feedback, and we will get back to you promptly.">
+    <meta name="author" content="Christian">
+    <title>Contact Us - Rafting Company</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting company logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Rafting Company</h1>
+        <section class="company-info">
+            <p>123 Main River Street<br>
+                Kolob, California</p>
+            <p>+1 999 999 999</p>
+            <p>info@raftingcompany.com</p>
+        </section>
+        <section class="contact-container">
+            <div class="map-div">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4837.3329423771465!2d-111.86880539928543!3d43.870431345340165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1785961957513!5m2!1sen!2sus"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-item">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name"
+                          required>
+                    </div>
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com"
+                          required>
+                    </div>
+                    <div class="form-item">
+                        <span class="form-label" id="purpose-label">Message Purpose</span>
+                        <div class="radio-group" role="radiogroup" aria-labelledby="purpose-label">
+                            <div>
+                                <input type="radio" id="general" name="purpose" value="general"
+                                  checked>
+                                <label for="general">General Inquiry</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="reservation" name="purpose"
+                                  value="reservation">
+                                <label for="reservation">Reservation Question</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="suggestion" name="purpose"
+                                  value="suggestion">
+                                <label for="suggestion">Website Suggestion</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item-stacked">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type here"
+                          required></textarea>
+                    </div>
+                    <div class="form-item checkbox-item">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </div>
+        </section>
+        <section class="employee-container">
+            <h2>We Are Here To Serve You!</h2>
+            <div class="employees">
+                <figure>
+                    <img src="images/ceo.jpg" alt="Meet our CEO">
+                    <figcaption>CEO</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/manager.jpg" alt="">
+                    <figcaption>Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/customer-service.jpg"
+                      alt="Meet our customer service specialist">
+                    <figcaption>Customer Service Specialist</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Rafting Company | Christian</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook-bw.svg"
+                  alt="Visit our Facebook page"></a>
+            <a href="https://instagram.com"><img src="images/instagram-bw.svg"
+                  alt="Visit our Instagram page"></a>
+            <a href="https://x.com/"><img src="images/x-bw.svg"
+                  alt="Visit our X (formerly Twitter) page"></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
