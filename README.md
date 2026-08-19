@@ -1,17 +1,21 @@
-# WDD 130 Starting Template Repository
+# WDD 130 Evaluation & Practice Repository
 
-This repository provides the starter files and structure for **WDD 130** assignments and activities.
+This repository is dedicated to completing and reviewing assignments for the **WDD 130** course. 
 
 ## Purpose
 
-Use this template as the foundation for course projects and practice work. It is meant to give students a consistent starting point for building web pages with HTML and CSS.
+As an evaluator, my goal in maintaining this repository is to personally complete the course projects, activities, and assignments. By building these web pages from scratch using HTML and CSS, I gain a deep, hands-on familiarity with each assignment. This ensures I can accurately, fair, and effectively guide the graders who evaluate BYU Pathway students.
 
-## Includes
+## Live Website
 
-- Starter HTML files
-- CSS files
-- Basic folders for assets and project organization
+[View the Live Website](https://chrisglw.github.io/wdd130/)
 
-## Notes
+## What's Inside
 
-This template is intended for educational use and should be expanded as needed for course work.
+- **Starter & Solution Files:** HTML and CSS structures.
+- **Project Assets:** Standardized folders for images, stylesheets, and media.
+
+---
+
+> **Academic Integrity Warning:** 
+> If you are a student viewing this repository, please be aware that copying and pasting any of this work to complete your own assignments is a violation of university policy and may result in an academic honesty infraction. Please do your own work and use your own creativity!
