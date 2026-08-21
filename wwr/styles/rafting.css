@@ -8,10 +8,8 @@
     --accent2-color: #e9c46a;
     --bg-light: #f8f9fa;
     --white: #ffffff;
-
     --heading-font: "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
-
     --max-width: 840px;
     --spacing: 16px;
 }
@@ -98,7 +96,6 @@ header img {
     text-decoration: underline;
 }
 
-/* Social Media Icons */
 .socialmedia {
     display: flex;
     gap: 12px;
@@ -124,44 +121,15 @@ footer {
     font-size: 0.95rem;
 }
 
-/* ============================================================================================
-   HOME PAGE STYLES
-============================================================================================== */
-/* Home grid */
-.home-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.home-content img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-    justify-self: center;
-}
-
-.home-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-    text-align: center;
-}
-
-/* Book Button */
-.home-cta {
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-.home-cta .btn {
+/* =========================================
+   SHARED COMPONENTS: BUTTONS
+========================================= */
+.btn,
+.newsletter-btn,
+button[type="submit"] {
     display: inline-block;
-    padding: 0.75rem 2rem;
-    background-color: var(--primary-color);
     padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
@@ -172,11 +140,96 @@ footer {
     transition: background-color 0.2s ease;
 }
 
-.home-cta .btn:hover {
+.btn:hover,
+.newsletter-btn:hover,
+button[type="submit"]:hover {
     background-color: #143224;
 }
 
-/* Newsletter Form */
+/* =========================================
+   SHARED COMPONENT: PHOTO HERO
+   (used on Home and About)
+========================================= */
+.hero {
+    position: relative;
+    margin: 1.5rem 0 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: var(--spacing);
+    text-align: center;
+    background-color: rgba(27, 67, 50, 0.85);
+    color: var(--white);
+    font-size: 2.2rem;
+}
+
+/* =========================================
+   SHARED COMPONENT: PAGE HEADER BANNER
+   (used on Trips and Contact)
+========================================= */
+.page-header {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.page-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.page-header p {
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ============================================================================================
+   HOME PAGE STYLES
+============================================================================================== */
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-row img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.content-row p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.home-cta {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
 .newsletter {
     text-align: center;
     margin: 3rem 0;
@@ -188,8 +241,6 @@ footer {
 
 .newsletter-form {
     display: inline-block;
-    padding: 0;
-    box-shadow: none;
 }
 
 .newsletter .input-group {
@@ -221,53 +272,9 @@ footer {
     background-color: var(--white);
 }
 
-.newsletter-form .newsletter-btn {
-    width: auto;
-    grid-column: auto;
-    margin-top: 0;
-    padding: 0.75rem 1.5rem;
-    background-color: var(--primary-color);
-    color: var(--white);
-    font-weight: bold;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.newsletter-form .newsletter-btn:hover {
-    background-color: #143224;
-}
-
 /* ============================================================================================
    ABOUT US PAGE STYLES
 ============================================================================================== */
-
-/* Hero Section */
-.hero {
-    position: relative;
-    margin-bottom: 2rem;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 100%;
-    padding: var(--spacing);
-    text-align: center;
-    background-color: rgba(27, 67, 50, 0.85);
-    color: var(--white);
-    font-size: 2.2rem;
-}
-
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -287,13 +294,11 @@ footer {
     border-radius: 4px;
 }
 
-/* History Section */
 .history {
     margin: 3rem 0;
 }
 
 .history h2 {
-    text-align: center;
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }
@@ -315,13 +320,11 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Adventure Section */
 .adventure {
     margin: 3rem 0;
 }
 
 .adventure h2 {
-    text-align: center;
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }
@@ -353,26 +356,145 @@ footer {
 }
 
 /* ============================================================================================
+   TRIPS PAGE STYLES
+============================================================================================== */
+.trip-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 0 var(--spacing);
+}
+
+.trip-card {
+    background-color: var(--bg-light);
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.trip-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-info h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.trip-info p {
+    color: #333;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+.trip-info ul {
+    list-style: none;
+    padding-top: 0.5rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.trip-info li {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.trips-table {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 0 var(--spacing);
+}
+
+.trips-table h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.trips-table caption {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.trips-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.trips-table tr:hover td {
+    background-color: var(--bg-light);
+}
+
+/* ============================================================================================
    CONTACT US PAGE STYLES
 ============================================================================================== */
-
 .company-info {
     text-align: center;
     margin: 2rem 0;
     font-size: 1.1rem;
 }
 
-.company-info p {
-    margin: 0.5rem 0;
+.company-info h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
 }
 
-/* Contact Container (Map & Form) */
+.company-info address {
+    font-style: normal;
+}
+
 .contact-container {
+    margin: 3rem 0;
+}
+
+.contact-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.contact-container-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: start;
-    margin-bottom: 3rem;
 }
 
 .map-div iframe {
@@ -384,7 +506,6 @@ footer {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Styles */
 form {
     display: grid;
     gap: 1.2rem;
@@ -455,24 +576,10 @@ textarea:focus {
 button[type="submit"] {
     width: 220px;
     justify-self: center;
-    padding: 0.75rem 1.5rem;
-    color: var(--white);
-    background-color: var(--primary-color);
-    font-weight: bold;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
     grid-column: 1 / -1;
     margin-top: 1rem;
 }
 
-button[type="submit"]:hover {
-    background-color: #143224;
-}
-
-/* Employee Section */
 .employee-container {
     border: 1px solid #dee2e6;
     background-color: var(--bg-light);
@@ -482,7 +589,6 @@ button[type="submit"]:hover {
 }
 
 .employee-container h2 {
-    text-align: center;
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }

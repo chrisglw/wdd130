@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="Experience the ultimate thrill with our expert-guided white water rafting adventures! Browse our action-packed river trips, sign up for exclusive updates, and book your next epic outdoor getaway today.">
+      content="Explore exciting whitewater rafting and paddling trips with Paddle & Raft. View detailed itineraries, photos, pricing tables, and book your adventure today!">
     <meta name="author" content="Christian">
-    <title>Home - Paddle & Raft</title>
+    <title>Trips - Paddle & Raft</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
         <img src="images/logo.png" alt="Rafting company logo">
-        <nav>
+        <nav aria-label="Primary navigation">
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -23,14 +23,86 @@
             </ul>
         </nav>
     </header>
-
     <main>
-
+        <section class="page-header">
+            <h1>Our Whitewater Rafting Trips</h1>
+            <p>Find your next great outdoor adventure with Paddle & Raft. From beginner floats to
+                expert rapids, we have a trip for everyone.</p>
+        </section>
+        <section class="trip-cards-container">
+            <article class="trip-card">
+                <img src="images/raft-team-paddling.jpg" alt="Raft team paddling together">
+                <div class="trip-info">
+                    <h2>Beginner</h2>
+                    <p>A fun, family-friendly introduction to whitewater paddling with breathtaking
+                        scenery.</p>
+                    <ul>
+                        <li><strong>Duration:</strong> Half Day (4 hours)</li>
+                        <li><strong>Price:</strong> $75 per person</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="trip-card">
+                <img src="images/rafting-exciting-rapids.jpg" alt="Rafting through exciting rapids">
+                <div class="trip-info">
+                    <h2>Intermediate</h2>
+                    <p>Our most popular adventure! Tackle continuous, high-adrenaline whitewater
+                        through rugged gorges with our expert guides.</p>
+                    <ul>
+                        <li><strong>Duration:</strong> Full Day (6 hours, lunch included)</li>
+                        <li><strong>Price:</strong> $120 per person</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="trip-card">
+                <img src="images/raft-team-paddling.jpg" alt="Raft team paddling together">
+                <div class="trip-info">
+                    <h2>Expert</h2>
+                    <p>Escape civilization completely. Spend 3 days navigating remote river canyons,
+                        camping under the stars, and enjoying gourmet riverside meals.</p>
+                    <ul>
+                        <li><strong>Duration:</strong> 3 Days / 2 Nights</li>
+                        <li><strong>Price:</strong> $450 per person</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="trips-table">
+            <h2>Trip Comparison Overview</h2>
+            <div class="table-container">
+                <table>
+                    <caption>Summary of All Available Paddle & Raft Trips</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Trip Name</th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Beginner</td>
+                            <td>Half Day (4 hrs)</td>
+                            <td>$75</td>
+                        </tr>
+                        <tr>
+                            <td>Intermediate</td>
+                            <td>Full Day (6 hrs)</td>
+                            <td>$120</td>
+                        </tr>
+                        <tr>
+                            <td>Expert</td>
+                            <td>3 Days / 2 Nights</td>
+                            <td>$450</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
-
     <footer>
         <p>&copy; 2026 | Paddle & Raft | Christian</p>
-        <nav class="socialmedia">
+        <nav class="socialmedia" aria-label="Social media links">
             <a href="https://facebook.com"><img src="images/facebook-bw.svg"
                   alt="Visit our Facebook page"></a>
             <a href="https://instagram.com"><img src="images/instagram-bw.svg"
@@ -39,7 +111,6 @@
                   alt="Visit our X (formerly Twitter) page"></a>
         </nav>
     </footer>
-
 </body>
 
 </html>
