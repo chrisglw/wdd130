@@ -125,6 +125,122 @@ footer {
 }
 
 /* ============================================================================================
+   HOME PAGE STYLES
+============================================================================================== */
+/* Home grid */
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.home-content img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    justify-self: center;
+}
+
+.home-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+/* Book Button */
+.home-cta {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.home-cta .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.home-cta .btn:hover {
+    background-color: #143224;
+}
+
+/* Newsletter Form */
+.newsletter {
+    text-align: center;
+    margin: 3rem 0;
+    background-color: var(--bg-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.newsletter-form {
+    display: inline-block;
+    padding: 0;
+    box-shadow: none;
+}
+
+.newsletter .input-group {
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.newsletter .form-field {
+    text-align: left;
+}
+
+.newsletter label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: var(--accent1-color);
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 220px;
+    padding: 0.75rem;
+    font: inherit;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: var(--white);
+}
+
+.newsletter-form .newsletter-btn {
+    width: auto;
+    grid-column: auto;
+    margin-top: 0;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.newsletter-form .newsletter-btn:hover {
+    background-color: #143224;
+}
+
+/* ============================================================================================
    ABOUT US PAGE STYLES
 ============================================================================================== */
 
